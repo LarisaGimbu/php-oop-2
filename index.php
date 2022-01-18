@@ -31,15 +31,6 @@ $premium_user = new PremiumUser('Annamaria', 'Dalba', 10);
 $premium_user->setDiscount(10);
 
 $premium_discount = $new_product->getFinalPrice()-($new_product->getFinalPrice()*$premium_user->getDiscount())/100;
-
-
-var_dump($new_shop);
-var_dump($new_product);
-var_dump($new_product->getFinalPrice());
-var_dump($old_product);
-var_dump($old_product->getFinalPrice());
-var_dump($new_user);
-var_dump($premium_user);
 ?>
 
 <!DOCTYPE html>
