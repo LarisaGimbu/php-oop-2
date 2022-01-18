@@ -11,6 +11,10 @@ class OldProduct extends Product {
     $this->discount = 30;
   }
 
+  public function setExpiration($_expiration){
+    $this->expiration = $_expiration;
+  }
+
   public function setDiscount($_discount)
   {
     if((date("Y/m/d") - date($this->expiration)) > 1){
@@ -19,4 +23,9 @@ class OldProduct extends Product {
 
     $this->discount += $_discount;
   }
+  
+  public function getExpiration(){
+    return $this->expiration;
+  }
+
 }
