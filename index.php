@@ -1,5 +1,11 @@
 <?php
+require_once __DIR__ . '/classes/Shop.php';
 
+$new_shop = new Shop('BeautyVera');
+$new_shop->setFondationYear(2010);
+$new_shop->setUsersNumb(50000);
+
+var_dump($new_shop);
 ?>
 
 <!DOCTYPE html>
