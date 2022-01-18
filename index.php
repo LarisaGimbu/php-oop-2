@@ -42,10 +42,12 @@ $premium_discount = $new_product->getFinalPrice()-($new_product->getFinalPrice()
   <title>Document</title>
 </head>
 <body>
+  <!-- presentazione negozio  -->
   <h1> <?php echo $new_shop->getName() ?></h1>
   <p>Il nostro negozio è stato fondato nel <strong><?php echo $new_shop->getFondationYear() ?></strong> e conta ormai più di <strong><?php echo $new_shop->getUsersNumb() ?></strong> utenti sodisfatti, ci farebbe piacere che fossi uno di essi!</p>
 
   <hr>
+  <!-- utente normale con prodotto vecchio  -->
   <h3>Buongiorno <?php echo $new_user->getSurname()?> <?php echo $new_user->getName() ?>, </h4>
   <p>Lei ha nel carrello il nostro prodotto <strong><?php echo $old_product->getName() ?></strong> della marca <strong><?php echo $old_product->getBrand() ?></strong>.</p>
   <p>Essendo questo prodotto presente in magazzino da molto tempo le offriamo su di esso uno sconto:</p>
@@ -64,6 +66,7 @@ $premium_discount = $new_product->getFinalPrice()-($new_product->getFinalPrice()
   </ul>
 
   <hr>
+  <!-- utente premium con prodotto nuovo  -->
   <h3>Bentornato <?php echo $premium_user->getSurname() ?> <?php echo $premium_user->getName() ?>,</h3>
   <p>Lei ha nel carrello il nostro prodotto <strong><?php echo $new_product->getName() ?></strong> della marca <strong><?php echo $new_product->getBrand() ?></strong>.</p>
   <p>Modalità d'uso: <?php echo $new_product->getToUse() ?></p>
