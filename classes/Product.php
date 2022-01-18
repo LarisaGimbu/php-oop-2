@@ -8,9 +8,10 @@ class Product {
   protected $discount = 0;
 
   //costruttori
-  public function __construct($_name)
+  public function __construct($_name, $_price)
   {
     $this->name = $_name;
+    $this->price = $_price;
   }
 
   //funzioni SET
