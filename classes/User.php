@@ -1,10 +1,14 @@
 <?php
+require_once __DIR__ . '/Address.php';
 
 class User {
   private $name;
   private $surname;
   private $email;
   private $discount = 0;
+
+  //trait
+  use Address;
 
   //costruttori
   function __construct($_name, $_surname)
